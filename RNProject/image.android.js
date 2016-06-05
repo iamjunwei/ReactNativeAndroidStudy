@@ -30,3 +30,5 @@ var styles = StyleSheet.create({
 });
 
 AppRegistry.registerComponent("ImageExample" , () => ImageExample);
+
+module.exports = ImageExample;

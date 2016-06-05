@@ -29,6 +29,10 @@
         <activity android:name=".MovieActivity"/>
         <activity android:name=".ImageExampleActivity"/>
         <activity android:name=".DrawerLayoutExampleActivity"/>
+        <activity android:name=".TouchableHighLightExampleActivity"/>
+        <activity android:name=".TouchableNativeFeedbackExampleActivity"/>
+        <activity android:name=".TouchableOpacityExampleActivity"/>
+        <activity android:name=".ViewPagerExampleActivity"/>
     </application>
 
 </manifest>

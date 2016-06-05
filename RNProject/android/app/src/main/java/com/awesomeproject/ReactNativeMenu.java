@@ -24,6 +24,10 @@ public class ReactNativeMenu extends Activity {
         adapter.add(new Item("Image", new Intent(this, ImageExampleActivity.class)));
         adapter.add(new Item("DrawerLayout", new Intent(this, DrawerLayoutExampleActivity.class)));
         adapter.add(new Item("ListView", new Intent(this, ListExampleActivity.class)));
+        adapter.add(new Item("TouchableHighlight", new Intent(this, TouchableHighLightExampleActivity.class)));
+        adapter.add(new Item("TouchableOpacity", new Intent(this, TouchableOpacityExampleActivity.class)));
+        adapter.add(new Item("TouchableNativeFeedback", new Intent(this, TouchableNativeFeedbackExampleActivity.class)));
+        adapter.add(new Item("ViewPager", new Intent(this, ViewPagerExampleActivity.class)));
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {

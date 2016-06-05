@@ -53,3 +53,5 @@ var styles = StyleSheet.create({
 });
 
 AppRegistry.registerComponent('ListExample', () => ListExample);
+
+module.exports = ListExample;

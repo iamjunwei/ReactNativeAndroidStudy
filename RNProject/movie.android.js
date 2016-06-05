@@ -42,3 +42,5 @@ var styles = StyleSheet.create({
 });
 
 AppRegistry.registerComponent('MovieView', () => MovieView);
+
+module.exports = MovieView;

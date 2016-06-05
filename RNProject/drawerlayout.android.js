@@ -57,3 +57,5 @@ class DrawerLayoutExample extends Component{
 }
 
 AppRegistry.registerComponent("DrawerLayoutExample", () => DrawerLayoutExample);
+
+module.exports = DrawerLayoutExample;
