@@ -5,6 +5,7 @@ var DrawerLayoutExample = require("./drawerlayout.android");
 var TouchableHighlightView = require("./touchablehighlight.android");
 var TouchableNativeFeedbackExample = require("./touchablenativefeedback.android");
 var TouchableOpacityView = require("./touchableopacity.android");
+require("./mymenu.android");
 
 import React, {Component} from 'react';
 

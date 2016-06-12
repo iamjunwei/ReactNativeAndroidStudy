@@ -33,6 +33,7 @@
         <activity android:name=".TouchableNativeFeedbackExampleActivity"/>
         <activity android:name=".TouchableOpacityExampleActivity"/>
         <activity android:name=".ViewPagerExampleActivity"/>
+        <activity android:name=".MyMenuActivity"/>
     </application>
 
 </manifest>

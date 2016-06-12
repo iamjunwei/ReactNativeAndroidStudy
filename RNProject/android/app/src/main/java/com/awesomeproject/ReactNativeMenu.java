@@ -28,6 +28,7 @@ public class ReactNativeMenu extends Activity {
         adapter.add(new Item("TouchableOpacity", new Intent(this, TouchableOpacityExampleActivity.class)));
         adapter.add(new Item("TouchableNativeFeedback", new Intent(this, TouchableNativeFeedbackExampleActivity.class)));
         adapter.add(new Item("ViewPager", new Intent(this, ViewPagerExampleActivity.class)));
+        adapter.add(new Item("MyMenu", new Intent(this, MyMenuActivity.class)));
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
