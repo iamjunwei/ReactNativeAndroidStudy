@@ -15,13 +15,14 @@ import {
 var MyButton = React.createClass({
 	getInitialState() {
 		return {
+			selectStates: this.props.isselect,
 			myBackColor: "white",
 			myBorderColor: "black",
 			myTextColor: "black",
 		};
 	},
 	_onPressIn() {
-		if (this.props.isselect) {
+		if (this.state.selectStates) {
 			this.setState({
 				myBackColor: "yellow",
 				myBorderColor: "red",
@@ -36,7 +37,7 @@ var MyButton = React.createClass({
 		}
 	},
 	_onPressOut() {
-		if (this.props.isselect) {
+		if (this.state.selectStates) {
 			this.setState({
 				myBackColor: "red",
 				myBorderColor: "yellow",
@@ -66,9 +67,33 @@ var MyButton = React.createClass({
 			</TouchableOpacity>
         );
     },
-	componentDidMount() {
+	componentWillMount() {
+		this.setState({
+			selectStates: this.props.isselect,
+		});
 		this._onPressOut();
-	}
+	},
+	shouldComponentUpdate(nextProps, nextState) {
+		return true;
+	},
+	componentWillReceiveProps(nextProps) {
+		this.setState({
+			selectStates: nextProps.isselect,
+		});
+		if (nextProps.isselect) {
+			this.setState({
+				myBackColor: "red",
+				myBorderColor: "yellow",
+				myTextColor: "yellow",
+			});
+		} else {
+			this.setState({
+				myBackColor: "white",
+				myBorderColor: "black",
+				myTextColor: "black",
+			});
+		}
+	},
 });
 	
 var styles = StyleSheet.create({

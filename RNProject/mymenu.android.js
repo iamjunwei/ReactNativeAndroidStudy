@@ -45,13 +45,17 @@ var Header = React.createClass({
                    isselect={this.props.selectTab === i}>
                </MyButton>
            );
+		   //NativeModules.ToastAndroid.show((this.props.selectTab === i) + "", NativeModules.ToastAndroid.SHORT);
        }
        return (
             <View style={[styles.row, styles.height50]}>
                 {tabs}
             </View>
        );
-   }
+   },
+   shouldComponentUpdate: function() {
+		return true;
+   },
 });
 
 var Left = React.createClass({
@@ -75,6 +79,7 @@ var Left = React.createClass({
                     isselect={this.props.selectTab === i}>
                 </MyButton>
             );
+			//NativeModules.ToastAndroid.show((this.props.selectTab === i) + "", NativeModules.ToastAndroid.SHORT);
         }
         return (
             <View style={styles.flex1}>
@@ -97,7 +102,7 @@ var Right = React.createClass({
             tabs.push(
                 <MyButton
                     activeOpacity={1}
-                    onPressButton={function() {this.props.contentSelect(j)}.bind(this)}
+                    onPressButton={function() {this.props.contentSelect(this.props.data[j])}.bind(this)}
                     style={[styles.center, styles.height50]}
                     buttonStyle={[styles.center, styles.height50]}
                     textStyle={[styles.height50, styles.center]}
@@ -105,6 +110,7 @@ var Right = React.createClass({
                     isselect={this.props.selectTab === this.props.data[i]}>
                 </MyButton>
             );
+			//NativeModules.ToastAndroid.show((this.props.selectTab === this.props.data[i]) + "", NativeModules.ToastAndroid.SHORT);
         }
         return (
             <View style={styles.flex1}>
