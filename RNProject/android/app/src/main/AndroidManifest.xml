@@ -34,6 +34,7 @@
         <activity android:name=".TouchableOpacityExampleActivity"/>
         <activity android:name=".ViewPagerExampleActivity"/>
         <activity android:name=".MyMenuActivity"/>
+        <activity android:name=".TabHostExampleActivity"/>
     </application>
 
 </manifest>
