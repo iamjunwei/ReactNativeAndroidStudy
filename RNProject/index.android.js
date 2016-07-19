@@ -7,6 +7,8 @@ var TouchableNativeFeedbackExample = require("./touchablenativefeedback.android"
 var TouchableOpacityView = require("./touchableopacity.android");
 require("./mymenu.android");
 require("./tabhost.android");
+require("./layoutview.android");
+require("./interact.android");
 
 import React, {Component} from 'react';
 

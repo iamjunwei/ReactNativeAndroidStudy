@@ -1,5 +1,6 @@
 package com.awesomeproject.rnpackage;
 
+import com.awesomeproject.module.ExchangeStringModule;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.JavaScriptModule;
 import com.facebook.react.bridge.NativeModule;
@@ -78,7 +79,8 @@ public class MyReactPackage implements ReactPackage {
                 new TimePickerDialogModule(reactContext),
                 new ToastModule(reactContext),
                 new VibrationModule(reactContext),
-                new WebSocketModule(reactContext)
+                new WebSocketModule(reactContext),
+                new ExchangeStringModule(reactContext)
         );
     }
 
