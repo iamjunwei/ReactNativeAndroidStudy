@@ -9,6 +9,7 @@ require("./mymenu.android");
 require("./tabhost.android");
 require("./layoutview.android");
 require("./interact.android");
+require("./flightInquire");
 
 import React, {Component} from 'react';
 

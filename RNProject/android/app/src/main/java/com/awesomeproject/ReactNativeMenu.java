@@ -33,6 +33,7 @@ public class ReactNativeMenu extends Activity {
         adapter.add(new Item("TabHost", new Intent(this, TabHostExampleActivity.class), -1));
         adapter.add(new Item("LayoutViewExample", new Intent(this, LayoutViewExampleActivity.class), -1));
         adapter.add(new Item("InteractBetweenJSAndNative", new Intent(this, InteractBetweenJSAndNative.class), 1));
+        adapter.add(new Item("FlightInquire", new Intent(this, FlightInquireActivity.class), 1));
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {

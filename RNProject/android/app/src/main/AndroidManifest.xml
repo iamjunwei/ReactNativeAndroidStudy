@@ -37,6 +37,7 @@
         <activity android:name=".TabHostExampleActivity"/>
         <activity android:name=".LayoutViewExampleActivity"/>
         <activity android:name=".InteractBetweenJSAndNative"/>
+        <activity android:name=".FlightInquireActivity"/>
     </application>
 
 </manifest>
