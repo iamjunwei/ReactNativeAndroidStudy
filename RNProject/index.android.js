@@ -10,6 +10,7 @@ require("./tabhost.android");
 require("./layoutview.android");
 require("./interact.android");
 require("./flightInquire");
+require("./fetchdata");
 
 import React, {Component} from 'react';
 
