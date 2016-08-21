@@ -39,6 +39,7 @@
         <activity android:name=".InteractBetweenJSAndNative"/>
         <activity android:name=".FlightInquireActivity"/>
         <activity android:name=".FetchDataActivity"/>
+        <activity android:name=".AtyScoreView"/>
     </application>
 
 </manifest>

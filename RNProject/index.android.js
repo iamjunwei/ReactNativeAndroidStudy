@@ -11,6 +11,8 @@ require("./layoutview.android");
 require("./interact.android");
 require("./flightInquire");
 require("./fetchdata");
+require("./arc");
+require("./circle.score");
 
 import React, {Component} from 'react';
 
