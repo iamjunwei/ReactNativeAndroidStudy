@@ -1,0 +1,22 @@
+{
+  "name": "flight_assistant",
+  "version": "0.0.1",
+  "appVersion": "6.20",
+  "private": true,
+  "scripts": {
+    "start": "crn-cli start",
+    "android": "crn-cli run-android",
+    "ios": "crn-cli run-ios"
+  },
+  "dependencies": {
+    "@ctrip/crn": "0.2.145",
+    "react": "15.2.0",
+    "react-art": "^0.15.1",
+    "react-native": "0.30.0",
+    "react-native-circular-progress": "0.0.7",
+    "react-native-progress": "^3.0.1",
+    "react-native-swiper": "^1.4.9",
+    "react-redux": "^4.4.5",
+    "redux": "^3.5.2"
+  }
+}
