@@ -13,6 +13,7 @@ require("./flightInquire");
 require("./fetchdata");
 require("./arc");
 require("./circle.score");
+require("./MessionCard");
 
 import React, {Component} from 'react';
 

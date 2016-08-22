@@ -40,6 +40,7 @@
         <activity android:name=".FlightInquireActivity"/>
         <activity android:name=".FetchDataActivity"/>
         <activity android:name=".AtyScoreView"/>
+        <activity android:name=".AtyMessionCard"/>
     </application>
 
 </manifest>

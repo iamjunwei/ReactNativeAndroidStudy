@@ -36,6 +36,7 @@ public class ReactNativeMenu extends Activity {
         adapter.add(new Item("FlightInquire", new Intent(this, FlightInquireActivity.class), 1));
         adapter.add(new Item("FetchData", new Intent(this, FetchDataActivity.class), 1));
         adapter.add(new Item("ScoreView", new Intent(this, AtyScoreView.class), 1));
+        adapter.add(new Item("MessionCard", new Intent(this, AtyMessionCard.class), 1));
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
